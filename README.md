@@ -1,0 +1,2 @@
+# sample_taskscheduler_limit
+同時実行スレッド数を制限したタスクスケジューラのサンプル
