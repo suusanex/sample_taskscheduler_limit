@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sample_taskscheduler_limit", "sample_taskscheduler_limit\sample_taskscheduler_limit.csproj", "{71DE080F-0A0F-46D5-B860-14A6BA345476}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test_sample_taskscheduler_limit", "test_sample_taskscheduler_limit\test_sample_taskscheduler_limit.csproj", "{A0DA5104-8B08-4233-ADFD-BCAF7BB28774}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71DE080F-0A0F-46D5-B860-14A6BA345476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71DE080F-0A0F-46D5-B860-14A6BA345476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71DE080F-0A0F-46D5-B860-14A6BA345476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71DE080F-0A0F-46D5-B860-14A6BA345476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0DA5104-8B08-4233-ADFD-BCAF7BB28774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0DA5104-8B08-4233-ADFD-BCAF7BB28774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0DA5104-8B08-4233-ADFD-BCAF7BB28774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0DA5104-8B08-4233-ADFD-BCAF7BB28774}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
