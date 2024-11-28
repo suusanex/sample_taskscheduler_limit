@@ -71,18 +71,17 @@ namespace sample_taskscheduler_limit
         {
             ThreadPool.UnsafeQueueUserWorkItem(_ =>
             {
-                Task item;
+                Task? item;
                 lock (_tasksLock)
                 {
-                    //タスクが空になったら、この一連のNotifyThreadPoolOfPendingWorkのループを終了し、ループの数をデクリメントする。
-                    if (_tasks.Count == 0)
+                    //タスクが空になったら_tasks.Firstはnull
+                    item = _tasks.First?.Value;
+                    if (item is null)
                     {
+                        //空になったらこの一連のNotifyThreadPoolOfPendingWorkのループを終了し、ループの数をデクリメントする。
                         _delegatesQueuedOrRunning--;
                         return;
                     }
-
-                    //Countが0ではないことをチェックしていて排他ロック内なので、nullはあり得ない
-                    item = _tasks.First!.Value;
                     _tasks.RemoveFirst();
                 }
 
